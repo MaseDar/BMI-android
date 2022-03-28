@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="teal">#4db6ac</color>
+    <color name="tealDark">#00867d</color>
+    <color name="tealLight">#82e9de</color>
+    
+    <color name="cyan">#80deea</color>
+    <color name="cyanDark">#4bacb8</color>
+    <color name="cyanLight">#b4ffff</color>
+
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>

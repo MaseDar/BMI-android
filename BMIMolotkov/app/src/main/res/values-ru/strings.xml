@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ИМТ Молотков</string>
+    <string name="app_description">Индекс массы тела для вас!</string>
+
+    <string name="form_name">Имя</string>
+    <string name="form_weight">Вес</string>
+    <string name="form_height">Рост</string>
+    <string name="form_start">Старт</string>
+    <string name="form_name_error">Неверное имя</string>
+    <string name="form_weight_error">Неверный вес</string>
+    <string name="form_height_error">Неверный рост</string>
+    <string name="menu_statistics">Cтатистика</string>
+    <string name="menu_profile">Профиль</string>
+    <string name="menu_weights">Веса</string>
+    <string name="item_weight">Вес:</string>
+    <string name="item_body_index">ИМТ:</string>
+    <string name="item_time">Время:</string>
+    <string name="item_weight_value">%.1f кг</string>
+    <string name="new_weight">Добавить новый вес (кг)</string>
+    <string name="edit_weight">Редактировать вес</string>
+    <string name="weight_suffix">кг</string>
+    <string name="avg_weight_title">Средний вес:</string>
+    <string name="avg_body_index_title">Средний ИМТ:</string>
+    <string name="last_week_title">Последняя неделя:</string>
+    <string name="last_month_title">Последний месяц:</string>
+    <string name="last_quarter_title">Последний квартал:</string>
+    <string name="last_year_title">Последний год:</string>
+    <string name="profile_user_height">Рост: %.2f м</string>
+    <string name="profile_user_weight">Вес: %.1f кг</string>
+    <string name="profile_body_index">ИМТ: %.2f</string>
+</resources>

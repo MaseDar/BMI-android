@@ -1,6 +1,31 @@
 <resources>
-    <string name="app_name">BMIMolotkov</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name">BMI Molotkov</string>
+    <string name="app_description">Body mass index for u!</string>
+
+    <string name="form_name">Name</string>
+    <string name="form_weight">Weight</string>
+    <string name="form_height">Height</string>
+    <string name="form_start">Start</string>
+    <string name="form_name_error">Invalid name</string>
+    <string name="form_weight_error">Invalid weight</string>
+    <string name="form_height_error">Invalid height</string>
+    <string name="menu_statistics">Statistics</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_weights">Weights</string>
+    <string name="item_weight">Weight:</string>
+    <string name="item_body_index">Body index:</string>
+    <string name="item_time">Time:</string>
+    <string name="item_weight_value">%.1f kg</string>
+    <string name="new_weight">Add new weight (kg)</string>
+    <string name="edit_weight">Edit weight</string>
+    <string name="weight_suffix">kg</string>
+    <string name="avg_weight_title">Avg. weight:</string>
+    <string name="avg_body_index_title">Avg. body index:</string>
+    <string name="last_week_title">Last week:</string>
+    <string name="last_month_title">Last month:</string>
+    <string name="last_quarter_title">Last quarter:</string>
+    <string name="last_year_title">Last year:</string>
+    <string name="profile_user_height">Height: %.2f m</string>
+    <string name="profile_user_weight">Weight: %.1f kg</string>
+    <string name="profile_body_index">Body index: %.2f</string>
 </resources>

@@ -2,24 +2,25 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/weights">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.bmimolotkov.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/weights"
+        android:name="com.example.bmimolotkov.ui.weights.WeightsFragment"
+        android:label="WeightsFragment"
+        tools:layout="@layout/fragment_weights"/>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.bmimolotkov.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/profile"
+        android:name="com.example.bmimolotkov.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.bmimolotkov.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/statistics"
+        android:name="com.example.bmimolotkov.ui.statistics.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" />
+
 </navigation>

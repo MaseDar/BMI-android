@@ -6,9 +6,10 @@ buildscript {
         version_room = "2.4.2"
         version_gradle = '7.1.1'
         version_kotlin = '1.6.10'
-        version_lifecycle_extensions = "2.4.1"
+        version_lifecycle_extensions = "2.2.0"
         version_coroutine = "1.6.0-native-mt"
         version_navigation = "2.4.1"
+        kotlin_version = "1.4.32"
     }
 
     repositories {
