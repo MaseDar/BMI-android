@@ -28,6 +28,12 @@ class WeightsViewModel(
         }
     }
 
+    fun addTestDatas(){
+        uiScope.launch {
+            addTestData()
+        }
+    }
+
     fun deleteWeight(weight: Weight) {
         uiScope.launch {
             removeWeight(weight)
@@ -63,6 +69,61 @@ class WeightsViewModel(
                         difference,
                         weight / (it.height * it.height)
                     )
+                )
+            }
+        }
+    }
+
+     private suspend fun addTestData() {
+        withContext(Dispatchers.IO) {
+            val lastWeight = weightDao.getLastWeight()
+            val weight = 70f
+            val id: Int
+            val difference: Float
+            if (lastWeight != null) {
+                id = lastWeight.id + 1
+                difference = weight - lastWeight.weight
+            } else {
+                id = 1
+                difference = 0F
+            }
+
+            prefs.user?.let {
+                weightDao.addWeight(
+                    Weight(
+                        id+4,
+                        weight + 10,
+                        LocalDateTime.now().minusDays(2),
+                        difference,
+                        weight + 10/ (it.height * it.height)
+                    ),
+                )
+                weightDao.addWeight(
+                    Weight(
+                        id + 3,
+                        weight - 10,
+                        LocalDateTime.now().minusMonths(1),
+                        -20f,
+                        weight - 10/ (it.height * it.height)
+                    ),
+                )
+                weightDao.addWeight(
+                    Weight(
+                        id + 2,
+                        weight + 24,
+                        LocalDateTime.now().minusMonths(4),
+                        34f,
+                        weight + 24/ (it.height * it.height)
+                    ),
+                )
+                weightDao.addWeight(
+                    Weight(
+                        id + 1,
+                        weight - 30,
+                        LocalDateTime.now().minusMonths(10),
+                        -54f,
+                        weight - 30 / (it.height * it.height)
+                    ),
                 )
             }
         }

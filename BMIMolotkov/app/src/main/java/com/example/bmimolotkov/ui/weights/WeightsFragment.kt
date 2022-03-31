@@ -52,7 +52,6 @@ class WeightsFragment : Fragment(R.layout.fragment_weights) {
             viewModel::deleteWeight,
             this::editWeight
         )
-
         binding.weights.apply {
             layoutManager = LinearLayoutManager(requireContext())
             adapter = weightsAdapter
@@ -65,6 +64,10 @@ class WeightsFragment : Fragment(R.layout.fragment_weights) {
         binding.addWeight.setOnClickListener {
             createWeightDialog(null)
             weightDialog?.show()
+        }
+
+        binding.addTestWeight.setOnClickListener {
+            viewModel.addTestDatas()
         }
     }
 

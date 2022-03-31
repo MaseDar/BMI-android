@@ -44,6 +44,17 @@
             android:src="@android:drawable/ic_input_add"
             tools:ignore="ContentDescription" />
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addTestWeight"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@android:drawable/ic_input_add"
+            app:layout_anchor="@+id/nestedScrollView"
+            app:layout_anchorGravity="start|top"
+            tools:ignore="ContentDescription" />
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </layout>

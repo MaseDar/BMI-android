@@ -9,8 +9,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import com.example.bmimolotkov.R
-import com.example.bmimolotkov.databinding.FragmentHelpBinding
 import com.example.bmimolotkov.database.Prefs
+import com.example.bmimolotkov.databinding.FragmentHelpBinding
 import com.google.gson.Gson
 
 class HelpFragment : Fragment(R.layout.fragment_help) {
